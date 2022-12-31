@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3119EFCF29602ACA007F19BB /* Firebase_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */; };
-		3119EFD129602ACA007F19BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFD029602ACA007F19BB /* ContentView.swift */; };
+		3119EFD129602ACA007F19BB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFD029602ACA007F19BB /* ListView.swift */; };
 		3119EFD329602ACB007F19BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3119EFD229602ACB007F19BB /* Assets.xcassets */; };
-		3119EFD629602ACB007F19BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3119EFD529602ACB007F19BB /* Preview Assets.xcassets */; };
-		3119EFD829602ACB007F19BB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFD729602ACB007F19BB /* Persistence.swift */; };
-		3119EFDB29602ACB007F19BB /* Firebase_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFD929602ACB007F19BB /* Firebase_Chat.xcdatamodeld */; };
+		31A293EA29602B86002CF282 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A293E929602B86002CF282 /* UsersModel.swift */; };
+		31A293EC29602BAE002CF282 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A293EB29602BAE002CF282 /* UsersListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3119EFCB29602ACA007F19BB /* Firebase Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_ChatApp.swift; sourceTree = "<group>"; };
-		3119EFD029602ACA007F19BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3119EFD029602ACA007F19BB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		3119EFD229602ACB007F19BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3119EFD529602ACB007F19BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3119EFD729602ACB007F19BB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3119EFDA29602ACB007F19BB /* Firebase_Chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Firebase_Chat.xcdatamodel; sourceTree = "<group>"; };
+		31A293E929602B86002CF282 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		31A293EB29602BAE002CF282 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,21 +54,12 @@
 			isa = PBXGroup;
 			children = (
 				3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */,
-				3119EFD029602ACA007F19BB /* ContentView.swift */,
+				3119EFD029602ACA007F19BB /* ListView.swift */,
 				3119EFD229602ACB007F19BB /* Assets.xcassets */,
-				3119EFD729602ACB007F19BB /* Persistence.swift */,
-				3119EFD929602ACB007F19BB /* Firebase_Chat.xcdatamodeld */,
-				3119EFD429602ACB007F19BB /* Preview Content */,
+				31A293E929602B86002CF282 /* UsersModel.swift */,
+				31A293EB29602BAE002CF282 /* UsersListViewModel.swift */,
 			);
 			path = "Firebase Chat";
-			sourceTree = "<group>";
-		};
-		3119EFD429602ACB007F19BB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3119EFD529602ACB007F19BB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +120,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3119EFD629602ACB007F19BB /* Preview Assets.xcassets in Resources */,
 				3119EFD329602ACB007F19BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +131,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3119EFD829602ACB007F19BB /* Persistence.swift in Sources */,
-				3119EFD129602ACA007F19BB /* ContentView.swift in Sources */,
-				3119EFDB29602ACB007F19BB /* Firebase_Chat.xcdatamodeld in Sources */,
+				3119EFD129602ACA007F19BB /* ListView.swift in Sources */,
+				31A293EC29602BAE002CF282 /* UsersListViewModel.swift in Sources */,
 				3119EFCF29602ACA007F19BB /* Firebase_ChatApp.swift in Sources */,
+				31A293EA29602B86002CF282 /* UsersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +262,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Firebase Chat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 58W94N4862;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -303,7 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Firebase Chat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 58W94N4862;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -347,19 +335,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3119EFD929602ACB007F19BB /* Firebase_Chat.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3119EFDA29602ACB007F19BB /* Firebase_Chat.xcdatamodel */,
-			);
-			currentVersion = 3119EFDA29602ACB007F19BB /* Firebase_Chat.xcdatamodel */;
-			path = Firebase_Chat.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3119EFC329602ACA007F19BB /* Project object */;
 }
