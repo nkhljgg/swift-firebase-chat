@@ -13,6 +13,23 @@
 		31A293EA29602B86002CF282 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A293E929602B86002CF282 /* UsersModel.swift */; };
 		31A293EC29602BAE002CF282 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A293EB29602BAE002CF282 /* UsersListViewModel.swift */; };
 		31D7402629616BD90078079D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7402529616BD90078079D /* CardView.swift */; };
+		31D7402A296176240078079D /* PageRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74029296176240078079D /* PageRootView.swift */; };
+		31D7402C2961763C0078079D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7402B2961763C0078079D /* GradientView.swift */; };
+		31D7402F296176C40078079D /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7402E296176C40078079D /* View+CornerRadius.swift */; };
+		31D740312961773C0078079D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D740302961773C0078079D /* ActivityIndicator.swift */; };
+		31D74033296177840078079D /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74032296177840078079D /* CreateUserView.swift */; };
+		31D74036296177A80078079D /* CreateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74035296177A80078079D /* CreateUserViewModel.swift */; };
+		31D74039296178B90078079D /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74038296178B90078079D /* FormButton.swift */; };
+		31D7403B296178D50078079D /* FormDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7403A296178D50078079D /* FormDropDown.swift */; };
+		31D7403D296178EB0078079D /* FormDropDownWithRightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7403C296178EB0078079D /* FormDropDownWithRightAction.swift */; };
+		31D7403F296178FA0078079D /* FormFieldWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7403E296178FA0078079D /* FormFieldWrapper.swift */; };
+		31D74041296179070078079D /* FormTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74040296179070078079D /* FormTextEditor.swift */; };
+		31D74043296179150078079D /* FormTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74042296179150078079D /* FormTextModel.swift */; };
+		31D74045296179250078079D /* FormTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74044296179250078079D /* FormTextView.swift */; };
+		31D74047296179380078079D /* FormTextViewWithRightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D74046296179380078079D /* FormTextViewWithRightAction.swift */; };
+		31D740492961797C0078079D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D740482961797C0078079D /* UIColor.swift */; };
+		31D7404B296179B30078079D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7404A296179B30078079D /* Color.swift */; };
+		31D7404E29617A090078079D /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7404D29617A090078079D /* AppString.swift */; };
 		31F5252B2960743300790BA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31F5252A2960743300790BA6 /* GoogleService-Info.plist */; };
 		31F5252E2960750200790BA6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 31F5252D2960750200790BA6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		31F525302960750200790BA6 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 31F5252F2960750200790BA6 /* FirebaseAuthCombine-Community */; };
@@ -27,7 +44,24 @@
 		31A293E929602B86002CF282 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		31A293EB29602BAE002CF282 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		31D7402529616BD90078079D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		31F5252A2960743300790BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31D74029296176240078079D /* PageRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRootView.swift; sourceTree = "<group>"; };
+		31D7402B2961763C0078079D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		31D7402E296176C40078079D /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		31D740302961773C0078079D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		31D74032296177840078079D /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
+		31D74035296177A80078079D /* CreateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewModel.swift; sourceTree = "<group>"; };
+		31D74038296178B90078079D /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
+		31D7403A296178D50078079D /* FormDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDropDown.swift; sourceTree = "<group>"; };
+		31D7403C296178EB0078079D /* FormDropDownWithRightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDropDownWithRightAction.swift; sourceTree = "<group>"; };
+		31D7403E296178FA0078079D /* FormFieldWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldWrapper.swift; sourceTree = "<group>"; };
+		31D74040296179070078079D /* FormTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextEditor.swift; sourceTree = "<group>"; };
+		31D74042296179150078079D /* FormTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextModel.swift; sourceTree = "<group>"; };
+		31D74044296179250078079D /* FormTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextView.swift; sourceTree = "<group>"; };
+		31D74046296179380078079D /* FormTextViewWithRightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewWithRightAction.swift; sourceTree = "<group>"; };
+		31D740482961797C0078079D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		31D7404A296179B30078079D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		31D7404D29617A090078079D /* AppString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppString.swift; sourceTree = "<group>"; };
+		31F5252A2960743300790BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31F52531296079CD00790BA6 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,11 +97,10 @@
 		3119EFCD29602ACA007F19BB /* Firebase Chat */ = {
 			isa = PBXGroup;
 			children = (
+				31D7404F29617C200078079D /* platform */,
+				31D7404C296179FC0078079D /* data */,
 				31D7402429616BCE0078079D /* common-components */,
 				31D7402329616BBF0078079D /* ui */,
-				3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */,
-				3119EFD229602ACB007F19BB /* Assets.xcassets */,
-				31F5252A2960743300790BA6 /* GoogleService-Info.plist */,
 			);
 			path = "Firebase Chat";
 			sourceTree = "<group>";
@@ -85,9 +118,57 @@
 		31D7402429616BCE0078079D /* common-components */ = {
 			isa = PBXGroup;
 			children = (
+				31D74037296178AA0078079D /* form-components */,
+				31D7402D296176A30078079D /* extensions */,
 				31D7402529616BD90078079D /* CardView.swift */,
+				31D74029296176240078079D /* PageRootView.swift */,
+				31D7402B2961763C0078079D /* GradientView.swift */,
+				31D740302961773C0078079D /* ActivityIndicator.swift */,
 			);
 			path = "common-components";
+			sourceTree = "<group>";
+		};
+		31D7402D296176A30078079D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31D7402E296176C40078079D /* View+CornerRadius.swift */,
+				31D740482961797C0078079D /* UIColor.swift */,
+				31D7404A296179B30078079D /* Color.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		31D74037296178AA0078079D /* form-components */ = {
+			isa = PBXGroup;
+			children = (
+				31D74038296178B90078079D /* FormButton.swift */,
+				31D7403A296178D50078079D /* FormDropDown.swift */,
+				31D7403C296178EB0078079D /* FormDropDownWithRightAction.swift */,
+				31D7403E296178FA0078079D /* FormFieldWrapper.swift */,
+				31D74040296179070078079D /* FormTextEditor.swift */,
+				31D74042296179150078079D /* FormTextModel.swift */,
+				31D74044296179250078079D /* FormTextView.swift */,
+				31D74046296179380078079D /* FormTextViewWithRightAction.swift */,
+			);
+			path = "form-components";
+			sourceTree = "<group>";
+		};
+		31D7404C296179FC0078079D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				31D7404D29617A090078079D /* AppString.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		31D7404F29617C200078079D /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				31F5252A2960743300790BA6 /* GoogleService-Info.plist */,
+				3119EFD229602ACB007F19BB /* Assets.xcassets */,
+				3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */,
+			);
+			path = platform;
 			sourceTree = "<group>";
 		};
 		31F52533296079D600790BA6 /* view */ = {
@@ -95,6 +176,7 @@
 			children = (
 				3119EFD029602ACA007F19BB /* ListView.swift */,
 				31F52531296079CD00790BA6 /* AuthView.swift */,
+				31D74032296177840078079D /* CreateUserView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -103,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				31A293EB29602BAE002CF282 /* UsersListViewModel.swift */,
+				31D74035296177A80078079D /* CreateUserViewModel.swift */,
 			);
 			path = "view-model";
 			sourceTree = "<group>";
@@ -192,12 +275,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D74047296179380078079D /* FormTextViewWithRightAction.swift in Sources */,
+				31D740492961797C0078079D /* UIColor.swift in Sources */,
 				3119EFD129602ACA007F19BB /* ListView.swift in Sources */,
+				31D74045296179250078079D /* FormTextView.swift in Sources */,
+				31D74033296177840078079D /* CreateUserView.swift in Sources */,
 				31F52532296079CD00790BA6 /* AuthView.swift in Sources */,
+				31D74039296178B90078079D /* FormButton.swift in Sources */,
 				31A293EC29602BAE002CF282 /* UsersListViewModel.swift in Sources */,
 				3119EFCF29602ACA007F19BB /* Firebase_ChatApp.swift in Sources */,
 				31D7402629616BD90078079D /* CardView.swift in Sources */,
+				31D7404E29617A090078079D /* AppString.swift in Sources */,
+				31D7402A296176240078079D /* PageRootView.swift in Sources */,
+				31D7403D296178EB0078079D /* FormDropDownWithRightAction.swift in Sources */,
+				31D74041296179070078079D /* FormTextEditor.swift in Sources */,
+				31D7404B296179B30078079D /* Color.swift in Sources */,
+				31D740312961773C0078079D /* ActivityIndicator.swift in Sources */,
+				31D7403F296178FA0078079D /* FormFieldWrapper.swift in Sources */,
+				31D74043296179150078079D /* FormTextModel.swift in Sources */,
+				31D7402F296176C40078079D /* View+CornerRadius.swift in Sources */,
+				31D7403B296178D50078079D /* FormDropDown.swift in Sources */,
+				31D7402C2961763C0078079D /* GradientView.swift in Sources */,
 				31A293EA29602B86002CF282 /* UsersModel.swift in Sources */,
+				31D74036296177A80078079D /* CreateUserViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

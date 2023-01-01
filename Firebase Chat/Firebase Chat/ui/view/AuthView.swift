@@ -72,35 +72,3 @@ struct AuthView: View {
     }
 }
 
-struct CreateUser: View {
-    
-    @State var newUserEmail: String = ""
-    @State var newUserPassword: String = ""
-    
-    @Binding var creatingNewUser: Bool
-    
-    var viewModel = UsersListViewModel()
-    
-    var body: some View {
-        ZStack {
-            Color.clear.ignoresSafeArea()
-            CardView(shouldExpand: false) {
-                TextField("Email", text: $newUserEmail)
-                    .textInputAutocapitalization(.never)
-                    .padding(.vertical)
-                TextField("Password", text: $newUserPassword)
-                    .textInputAutocapitalization(.never)
-                    .padding(.vertical)
-                
-                Button {
-                    creatingNewUser.toggle()
-//                    viewModel.createNewUser(email: newUserEmail, password: newUserPassword)
-                } label: {
-                    Text("Create New User")
-                }
-            }.padding()
-        }
-    }
-    
-}
-
