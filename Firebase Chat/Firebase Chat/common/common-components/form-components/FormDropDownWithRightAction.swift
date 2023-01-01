@@ -1,5 +1,5 @@
 //
-//  FormDropdown.swift
+//  FormDropDownWithRightAction.swift
 //  SwiftUI Utilities
 //
 //  Created by Nikhil on 01/01/23.
@@ -8,37 +8,46 @@
 import Foundation
 import SwiftUI
 
-struct FormDropDown:View {
+struct FormDropDownWithRightAction:View {
+   
+    var manager = AppearanceManager()
     var title:String
     var placeHolder:String
+    var rightIcon: String
     var action:() -> Void
+    var rightIconAction: () -> Void
     
-    @ObservedObject var validator:FormTextModel
-    
-    init(title:String, placeholder:String,
-         validator:FormTextModel,
-         action:@escaping () -> Void) {
-        self.title = title
-        self.placeHolder = placeholder
-        self.validator = validator
-        self.action = action
-    }
+    @ObservedObject var validator: FormTextModel
     
     var body: some View {
         VStack {
-            Text(title)
-                .fontWeight(.bold)
-                .frame(maxWidth:.infinity, alignment:.leading)
-                .foregroundColor(validator.color)
+            HStack {
+                Text(title)
+                    .font(.poppinsHeadline)
+                    .frame(maxWidth:.infinity, alignment:.leading)
+                    .foregroundColor(validator.color)
+                Spacer()
+                
+                Button {
+                    rightIconAction()
+
+                } label: {
+                    Image(uiImage: UIImage(named: rightIcon) ?? UIImage()).frame(width: 30, height: 30).clipped().aspectRatio(contentMode: .fit)
+                }
+
+            }
             FormFieldWrapper(content: {
                 HStack {
                     if validator.text == "" {
-                        Text(placeHolder).foregroundColor(.gray)
+                        Text(placeHolder)
+                            .font(.poppins)
+                            .foregroundColor(manager.theme.formPlaceHolderText)
                             .frame(minWidth:0, maxWidth: .infinity, alignment: .leading)
                     } else {
                         Text(validator.text).lineLimit(nil)
+                            .font(.poppins)
+                            .foregroundColor(manager.theme.formControlText)
                             .frame(minWidth:0, maxWidth: .infinity, alignment: .leading)
-                            .font(.system(size: 14))
                             .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                     }
                     Spacer()

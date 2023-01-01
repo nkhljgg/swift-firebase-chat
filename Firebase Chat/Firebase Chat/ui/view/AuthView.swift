@@ -10,11 +10,7 @@ import SwiftUI
 
 struct AuthView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
-    
     @State var creatingNewUser: Bool = false
-    
     var viewModel = UsersListViewModel()
     
     var yOffset: CGFloat {
@@ -25,40 +21,49 @@ struct AuthView: View {
     }
     
     var body: some View {
-        ZStack {
-            VStack {
-                NavigationStack {
-                    CardView(shouldExpand: false) {
-                        TextField("Email", text: $email)
-                            .textInputAutocapitalization(.never)
-                        TextField("Password", text: $password)
-                            .textInputAutocapitalization(.never)
-                        Button {
-                            viewModel.signInUser(email: email, password: password)
-                        } label: {
-                            Text("Sign In")
-                        }
-                        
-                    }.padding()
+        PageRootView(title: "Welcome") {
+            ZStack {
+                VStack {
+                    
+                        CardView(shouldExpand: false) {
+                            
+                            FormTextView(title: AppString.CreateUser.emailTitle, placeholder: AppString.CreateUser.emailPlaceholder, validator: viewModel.email)
+                            FormTextView(title: AppString.CreateUser.passwordTitle, placeholder: AppString.CreateUser.passwordPlaceholder, validator: viewModel.password)
+                            
+                            GradientButton(title: "Sign In") {
+                                viewModel.validateForm()
+//                                viewModel.signInUser(email: viewModel.email.text, password: viewModel.password.text)
+                            }
+                            
+                            Button {
+                                creatingNewUser.toggle()
+                            } label: {
+                                Text("Create Account").foregroundColor(.black)
+                            }
+                            
+                        }.padding()
+                    
+                    Spacer()
                 }
-            }
-            
-            if creatingNewUser {
-                Color.black.opacity(0.2).ignoresSafeArea().onTapGesture {
-                    creatingNewUser.toggle()
+                
+                if creatingNewUser {
+                    Color.black.opacity(0.2).ignoresSafeArea().onTapGesture {
+                        creatingNewUser.toggle()
+                    }
                 }
+                else {
+                    Color.clear
+                }
+                
+                CreateUser(creatingNewUser: $creatingNewUser)
+                    .animation(.spring(response: 0.75,
+                                       dampingFraction: 0.7,
+                                       blendDuration: 1), value: creatingNewUser)
+                    .offset(x: xOffset, y: yOffset)
+                
             }
-            else {
-                Color.clear
-            }
-            
-            CreateUser(creatingNewUser: $creatingNewUser)
-                .animation(.spring(response: 0.75,
-                                   dampingFraction: 0.7,
-                                   blendDuration: 1), value: creatingNewUser)
-                .offset(x: xOffset, y: yOffset)
-            
         }
+        
         .toolbar {
             ToolbarItem {
                 Button {

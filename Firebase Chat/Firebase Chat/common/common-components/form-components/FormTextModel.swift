@@ -19,6 +19,9 @@ enum FormRules {
 }
 
 class FormTextModel: ObservableObject {
+    
+    var manager = AppearanceManager()
+    
     @Published var text = ""
     @Published var errorMessage = ""
     @Published var isValid = true
@@ -32,8 +35,9 @@ class FormTextModel: ObservableObject {
     init(name:String = "", rules:[FormRules] = []) {
         self.name = name
         self.rules = rules
+        
         $isValid
-            .map { $0 ? Color.gray : Color.red }
+            .map { [self] in $0 ? manager.theme.formLabel : manager.theme.formError }
             .assign(to: &$color)
         
         $text
@@ -72,7 +76,7 @@ class FormTextModel: ObservableObject {
     
     fileprivate func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
+        
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }

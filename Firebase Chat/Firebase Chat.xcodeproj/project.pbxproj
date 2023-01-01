@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3110A4DB2961856F0027CB21 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4DA2961856F0027CB21 /* DefaultTheme.swift */; };
+		3110A4DD296185800027CB21 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4DC296185800027CB21 /* Theme.swift */; };
+		3110A4DF296185940027CB21 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4DE296185940027CB21 /* AppearanceManager.swift */; };
+		3110A4E82961860D0027CB21 /* Fonts+Poppins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4E72961860D0027CB21 /* Fonts+Poppins.swift */; };
+		3110A4EB296186370027CB21 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4EA296186370027CB21 /* CustomFontView.swift */; };
+		3110A4ED296188FD0027CB21 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4EC296188FD0027CB21 /* PopoverView.swift */; };
+		3110A4EF296189480027CB21 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4EE296189480027CB21 /* PopupView.swift */; };
+		3110A4F129618A870027CB21 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110A4F029618A870027CB21 /* GradientButton.swift */; };
 		3119EFCF29602ACA007F19BB /* Firebase_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */; };
 		3119EFD129602ACA007F19BB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119EFD029602ACA007F19BB /* ListView.swift */; };
 		3119EFD329602ACB007F19BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3119EFD229602ACB007F19BB /* Assets.xcassets */; };
@@ -37,6 +45,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3110A4DA2961856F0027CB21 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		3110A4DC296185800027CB21 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3110A4DE296185940027CB21 /* AppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
+		3110A4E1296185ED0027CB21 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		3110A4E2296185ED0027CB21 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		3110A4E3296185ED0027CB21 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		3110A4E4296185ED0027CB21 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		3110A4E5296185EE0027CB21 /* Poppins-Regular-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular-Italic.ttf"; sourceTree = "<group>"; };
+		3110A4E72961860D0027CB21 /* Fonts+Poppins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Poppins.swift"; sourceTree = "<group>"; };
+		3110A4EA296186370027CB21 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
+		3110A4EC296188FD0027CB21 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		3110A4EE296189480027CB21 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		3110A4F029618A870027CB21 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		3119EFCB29602ACA007F19BB /* Firebase Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3119EFCE29602ACA007F19BB /* Firebase_ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_ChatApp.swift; sourceTree = "<group>"; };
 		3119EFD029602ACA007F19BB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -78,6 +99,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3110A4D7296185580027CB21 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4E92961862E0027CB21 /* example */,
+				3110A4E6296186000027CB21 /* extensions */,
+				3110A4E0296185E30027CB21 /* fonts */,
+				3110A4D82961855E0027CB21 /* appearance */,
+				31D7402429616BCE0078079D /* common-components */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		3110A4D82961855E0027CB21 /* appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4D9296185650027CB21 /* theme */,
+				3110A4DE296185940027CB21 /* AppearanceManager.swift */,
+			);
+			path = appearance;
+			sourceTree = "<group>";
+		};
+		3110A4D9296185650027CB21 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4DA2961856F0027CB21 /* DefaultTheme.swift */,
+				3110A4DC296185800027CB21 /* Theme.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		3110A4E0296185E30027CB21 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4E2296185ED0027CB21 /* Poppins-Bold.ttf */,
+				3110A4E1296185ED0027CB21 /* Poppins-Medium.ttf */,
+				3110A4E5296185EE0027CB21 /* Poppins-Regular-Italic.ttf */,
+				3110A4E4296185ED0027CB21 /* Poppins-Regular.ttf */,
+				3110A4E3296185ED0027CB21 /* Poppins-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		3110A4E6296186000027CB21 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4E72961860D0027CB21 /* Fonts+Poppins.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		3110A4E92961862E0027CB21 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				3110A4EA296186370027CB21 /* CustomFontView.swift */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
 		3119EFC229602ACA007F19BB = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +176,9 @@
 		3119EFCD29602ACA007F19BB /* Firebase Chat */ = {
 			isa = PBXGroup;
 			children = (
+				3110A4D7296185580027CB21 /* common */,
 				31D7404F29617C200078079D /* platform */,
 				31D7404C296179FC0078079D /* data */,
-				31D7402429616BCE0078079D /* common-components */,
 				31D7402329616BBF0078079D /* ui */,
 			);
 			path = "Firebase Chat";
@@ -124,6 +203,9 @@
 				31D74029296176240078079D /* PageRootView.swift */,
 				31D7402B2961763C0078079D /* GradientView.swift */,
 				31D740302961773C0078079D /* ActivityIndicator.swift */,
+				3110A4EC296188FD0027CB21 /* PopoverView.swift */,
+				3110A4EE296189480027CB21 /* PopupView.swift */,
+				3110A4F029618A870027CB21 /* GradientButton.swift */,
 			);
 			path = "common-components";
 			sourceTree = "<group>";
@@ -278,15 +360,22 @@
 				31D74047296179380078079D /* FormTextViewWithRightAction.swift in Sources */,
 				31D740492961797C0078079D /* UIColor.swift in Sources */,
 				3119EFD129602ACA007F19BB /* ListView.swift in Sources */,
+				3110A4EF296189480027CB21 /* PopupView.swift in Sources */,
 				31D74045296179250078079D /* FormTextView.swift in Sources */,
 				31D74033296177840078079D /* CreateUserView.swift in Sources */,
 				31F52532296079CD00790BA6 /* AuthView.swift in Sources */,
+				3110A4F129618A870027CB21 /* GradientButton.swift in Sources */,
+				3110A4ED296188FD0027CB21 /* PopoverView.swift in Sources */,
 				31D74039296178B90078079D /* FormButton.swift in Sources */,
 				31A293EC29602BAE002CF282 /* UsersListViewModel.swift in Sources */,
 				3119EFCF29602ACA007F19BB /* Firebase_ChatApp.swift in Sources */,
+				3110A4E82961860D0027CB21 /* Fonts+Poppins.swift in Sources */,
 				31D7402629616BD90078079D /* CardView.swift in Sources */,
 				31D7404E29617A090078079D /* AppString.swift in Sources */,
+				3110A4EB296186370027CB21 /* CustomFontView.swift in Sources */,
+				3110A4DF296185940027CB21 /* AppearanceManager.swift in Sources */,
 				31D7402A296176240078079D /* PageRootView.swift in Sources */,
+				3110A4DD296185800027CB21 /* Theme.swift in Sources */,
 				31D7403D296178EB0078079D /* FormDropDownWithRightAction.swift in Sources */,
 				31D74041296179070078079D /* FormTextEditor.swift in Sources */,
 				31D7404B296179B30078079D /* Color.swift in Sources */,
@@ -296,6 +385,7 @@
 				31D7402F296176C40078079D /* View+CornerRadius.swift in Sources */,
 				31D7403B296178D50078079D /* FormDropDown.swift in Sources */,
 				31D7402C2961763C0078079D /* GradientView.swift in Sources */,
+				3110A4DB2961856F0027CB21 /* DefaultTheme.swift in Sources */,
 				31A293EA29602B86002CF282 /* UsersModel.swift in Sources */,
 				31D74036296177A80078079D /* CreateUserViewModel.swift in Sources */,
 			);

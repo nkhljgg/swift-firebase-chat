@@ -27,12 +27,11 @@ struct CreateUser: View {
                     
                     FormTextView(title: AppString.CreateUser.confirmPasswordTitle, placeholder: AppString.CreateUser.confirmPasswordPlaceholder, validator: viewModel.confirmPassword)
                     
-                    Button {
+                    GradientButton(title: "Create Account") {
+                        viewModel.validateForm()
                         creatingNewUser.toggle()
-    //                    viewModel.createNewUser(email: newUserEmail, password: newUserPassword)
-                    } label: {
-                        Text("Create New User")
                     }
+                    
                 }.padding()
             }
         }
