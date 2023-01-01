@@ -12,15 +12,19 @@ struct ListView: View {
     var viewModel = UsersListViewModel()
     
     var body: some View {
-        
-        List {
-            ForEach(viewModel.usersList) { user in
-                Text(user.name)
+        VStack {
+            List {
+                ForEach(viewModel.usersList) { user in
+                    Text(user.name)
+                }
             }
+            
+            
+            
         }
+        
     }
 }
-
 
 struct ListView_Preview: PreviewProvider {
     static var previews: some View {

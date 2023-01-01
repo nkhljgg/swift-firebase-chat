@@ -9,8 +9,9 @@ import Foundation
 
 struct User: Identifiable {
     
-    var id: Int
+    var id: String
     var name: String
+    var email: String
     var image: String?
     
 }
