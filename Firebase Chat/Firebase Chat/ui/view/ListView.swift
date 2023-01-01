@@ -11,16 +11,21 @@ struct ListView: View {
     
     var viewModel = UsersListViewModel()
     
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        VStack {
-            List {
-                ForEach(viewModel.usersList) { user in
-                    Text(user.name)
+        NavigationView {
+            PageRootView(title: "Chat away!", shouldShowBack: true, backAction: {
+                dismiss()
+            }) {
+                VStack {
+                    List {
+                        ForEach(viewModel.usersList) { user in
+                            Text(user.name)
+                        }
+                    }
                 }
             }
-            
-            
-            
         }
         
     }

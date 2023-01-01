@@ -34,6 +34,11 @@ struct CreateUser: View {
                     
                 }.padding()
             }
+            if viewModel.isLoading {
+                Color.black.opacity(0.2).ignoresSafeArea()
+                ActivityIndicatorView(isAnimating: viewModel.isLoading)
+            }
+            
         }
     }
 }

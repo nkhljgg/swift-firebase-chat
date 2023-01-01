@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct User: Identifiable {
+struct User: Identifiable, Hashable {
     
+    var uuid = UUID()
     var id: String
     var name: String
     var email: String

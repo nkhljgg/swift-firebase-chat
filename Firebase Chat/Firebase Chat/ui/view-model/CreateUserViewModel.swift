@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
+import FirebaseAuth
+import FirebaseCore
 
 final class CreateUserViewModel:ObservableObject {
+    
+    @Published var isLoading = false
     
     @Published var name = FormTextModel(name: AppString.CreateUser.namePlaceholder, rules: [.required])
     @Published var email = FormTextModel(name: AppString.CreateUser.emailPlaceholder, rules:[.email])
@@ -17,6 +23,17 @@ final class CreateUserViewModel:ObservableObject {
     
     @Published var sizes = FormTextModel(rules:[.required])
     @Published var choosenUnit = "Choose your unit"
+    
+    func createNewUser(email: String, password: String) {
+        
+        isLoading = true
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            
+            print("Email \(email)")
+            self?.isLoading = false
+        }
+    }
     
     func validateForm() {
         name.isValid = name.observedValidity
