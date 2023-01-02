@@ -14,7 +14,6 @@ struct ListView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationView {
             PageRootView(title: "Chat away!", shouldShowBack: true, backAction: {
                 dismiss()
             }) {
@@ -26,8 +25,6 @@ struct ListView: View {
                     }
                 }
             }
-        }
-        
     }
 }
 

@@ -24,9 +24,30 @@ final class CreateUserViewModel:ObservableObject {
     @Published var sizes = FormTextModel(rules:[.required])
     @Published var choosenUnit = "Choose your unit"
     
-    func createNewUser(email: String, password: String) {
+    private lazy var allFormFields: [FormTextModel] = {
+        return [name, email, phoneNumber, password, confirmPassword]
+    }()
+    
+    func validateAndSubmit() {
         
         isLoading = true
+        var isFormValid = true
+        
+        for field in allFormFields {
+            field.isValid = field.observedValidity
+            if !field.isValid {
+                if isFormValid {
+                    isFormValid = false
+                    isLoading = false
+                }
+            }
+        }
+        if isFormValid {
+            createNewUser(email: email.text, password: password.text)
+        }
+     }
+    
+    func createNewUser(email: String, password: String) {
         
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             
@@ -34,10 +55,4 @@ final class CreateUserViewModel:ObservableObject {
             self?.isLoading = false
         }
     }
-    
-    func validateForm() {
-        name.isValid = name.observedValidity
-        email.isValid = email.observedValidity
-        password.isValid = password.observedValidity
-     }
 }
