@@ -1,3 +1,3 @@
-# swift-firebase-chat
+# Swift Firebase Chat
 
 A Basic Chatting App Using Firebase.
